@@ -13,7 +13,7 @@ public class Mainclass {
 		main_obj.Bubble_sort(arr1);
 		main_obj.Insertion_sort(arr2);
 		main_obj.Merge_sort(arr3);
-		main_obj.Quick_sort(arr3);
+		main_obj.Quick_sort(arr4);
 	}
 	
 	void add_extra_space()
