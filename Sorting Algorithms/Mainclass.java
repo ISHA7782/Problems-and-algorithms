@@ -7,13 +7,17 @@ public class Mainclass {
 		int arr2[] = {2,3,4,5,10,1,0,15,7,12,100,2,1,8};
 		int arr3[] = {2,3,4,5,10,1,0,15,7,12,100,2,1,8};
 		int arr4[] = {2,3,4,5,10,1,0,15,7,12,100,2,1,8};
+		int arr5[] = {1,3,4,5,3,1,0,5,7,2,0,2,1,4,2,3,1};
 
+		
 		Mainclass main_obj = new Mainclass();
 		main_obj.Selection_sort(arr);
 		main_obj.Bubble_sort(arr1);
 		main_obj.Insertion_sort(arr2);
 		main_obj.Merge_sort(arr3);
 		main_obj.Quick_sort(arr4);
+		main_obj.Counting_sort(arr5);
+
 	}
 	
 	void add_extra_space()
@@ -66,6 +70,14 @@ public class Mainclass {
 		int sort_arr[] = Quick_obj.sortt(arr);
 		this.add_extra_space();
 		System.out.println("Sorted array after Quick Sort");
+		this.print_arr(sort_arr);
+	}
+	void Counting_sort(int arr[])
+	{
+		CountingSort Counting_obj = new CountingSort();
+		int sort_arr[] = Counting_obj.sortt(arr);
+		this.add_extra_space();
+		System.out.println("Sorted array after Counting Sort");
 		this.print_arr(sort_arr);
 	}
 }
