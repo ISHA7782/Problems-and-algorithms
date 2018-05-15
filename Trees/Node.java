@@ -1,10 +1,16 @@
 
 public class Node {
-	int data;
-	Node left, right;
-	Node(int data)
+
+	int key;
+	Node left;
+	Node right;
+	Node parent;
+	public Node(int data)
 	{
-		this.data = data;
-		left = right = null;
+		key = data;
+		left = null;
+		right = null;
+		parent =null;
 	}
+	
 }
